@@ -3,20 +3,11 @@ import React from "react";
 const Gallery = () => {
   return (
     <div>
-      <div className='bg-flower'>
-        <div className='container mx-auto p-10 lg:py-9 lg:px-0'>
-          <h2 className='text-3xl text-center'>Captured Moments</h2>
-          <p className='text-center w-auto lg:w-96 mx-auto'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p>
-        </div>
-      </div>
-      <div className='bg-gallery p-10 sm:py-8 lg:py-36 lg:px-0'>
+      <div className='bg-gallery p-10 sm:py-8 lg:py-28 lg:px-0'>
         <div className='mx-auto max-w-screen-2xl px-4 md:px-8'>
           <div className='mb-4 flex items-center justify-center gap-8 sm:mb-8 md:mb-12'>
             <div className='text-center'>
-              <h2 className='text-2xl font-bold text-gold lg:text-3xl'>
+              <h2 className='text-2xl font-bold text-gold lg:text-5xl'>
                 Sweet Memories
               </h2>
             </div>

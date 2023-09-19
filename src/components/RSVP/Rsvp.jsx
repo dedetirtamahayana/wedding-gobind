@@ -37,14 +37,10 @@ const Rsvp = () => {
         data-aos='zoom-in-up'
       >
         <div className='text-center pb-8'>
-          <h2 className='text-3xl text-white'>Are You Attending?</h2>
-          <p className='text-white'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p>
+          <h2 className='text-5xl text-gold'>Are You Attending?</h2>
         </div>
         <div
-          className='bg-white  shadow-md p-6 md:p-8 lg:p-10'
+          className='bg-white rounded-2xl shadow-md p-6 md:p-8 lg:p-10'
           style={{ height: "100%" }}
         >
           <form onSubmit={handleSubmit}>
@@ -128,7 +124,7 @@ const Rsvp = () => {
             <div className='mb-4'>
               <label
                 htmlFor='message'
-                className='block text-black font-bold mb-2'
+                className='block text-black font-bold mb-2 '
               >
                 Enter Your Message
               </label>
@@ -142,12 +138,14 @@ const Rsvp = () => {
                 className='w-full p-3 border border-biru  focus:outline-none focus:border-indigo-500'
               ></textarea>
             </div>
-            <button
-              type='submit'
-              className='bg-biru text-gold py-3 px-6  hover:bg-indigo-600 transition duration-200'
-            >
-              SEND MESSAGE
-            </button>
+            <div className='flex justify-center items-center'>
+              <button
+                type='submit'
+                className='bg-biru text-gold py-3 px-6 hover:bg-indigo-600 transition duration-200 rounded-xl'
+              >
+                SEND MESSAGE
+              </button>
+            </div>
           </form>
         </div>
       </div>

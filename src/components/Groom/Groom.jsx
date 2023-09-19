@@ -12,7 +12,7 @@ const Groom = () => {
   return (
     <div className='bg-groom py-10 lg:py-32 overflow-hidden'>
       <div className='container lg mx-auto'>
-        <div className='text-center text-gold text-3xl flex flex-col items-center pb-5 lg:pb-0'>
+        <div className='text-center text-gold text-5xl flex flex-col items-center pb-5 lg:pb-0'>
           <h1>Groom and Bride</h1>
         </div>
         <div className='grid grid-cols-1 gap-2 lg:grid-cols-2 md:grid-cols-2 text-center text-white'>
