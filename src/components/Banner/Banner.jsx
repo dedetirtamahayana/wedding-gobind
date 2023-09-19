@@ -59,90 +59,51 @@ const Banner = () => {
             <img
               src='../3.jpg'
               alt='image 1'
-              className='h-full w-full object-cover'
+              className='h-full w-full object-cover bg-right'
             />
             <div className='absolute inset-0 grid h-full w-full items-center bg-black/75'>
-              <div className='w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32'>
-                <Typography
-                  variant='h1'
-                  color='white'
-                  className='mb-4 text-3xl md:text-4xl lg:text-5xl'
-                >
-                  Sarizaki & Amara
-                </Typography>
-                <Typography
-                  variant='lead'
-                  color='white'
-                  className='mb-3 opacity-80'
-                >
-                  20 Oktober 2023.
-                </Typography>
-                <Typography variant='lead' color='white' className='opacity-80'>
-                  Save The Date
-                </Typography>
-              </div>
+              <div className='w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32'></div>
             </div>
           </div>
           <div className='relative h-full w-full'>
             <img
               src='../banner-2.jpg'
               alt='image 2'
-              className='h-full w-full object-cover'
+              className='h-full w-full object-cover bg-right'
             />
             <div className='absolute inset-0 grid h-full w-full items-center bg-black/75'>
-              <div className='w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32'>
-                <Typography
-                  variant='h1'
-                  color='white'
-                  className='mb-4 text-3xl md:text-4xl lg:text-5xl'
-                >
-                  Sarizaki & Amara
-                </Typography>
-                <Typography
-                  variant='lead'
-                  color='white'
-                  className='mb-3 opacity-80'
-                >
-                  20 Oktober 2023.
-                </Typography>
-                <Typography variant='lead' color='white' className='opacity-80'>
-                  Save The Date
-                </Typography>
-              </div>
+              <div className='w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32'></div>
             </div>
           </div>
           <div className='relative h-full w-full'>
             <img
               src='../1.jpg'
               alt='image 3'
-              className='h-full w-full object-cover'
+              className='h-full w-full object-cover bg-right-bottom'
             />
             <div className='absolute inset-0 grid h-full w-full items-center bg-black/75'>
-              <div className='w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32'>
-                <Typography
-                  variant='h1'
-                  color='white'
-                  className='mb-4 text-3xl md:text-4xl lg:text-5xl'
-                >
-                  Sarizaki & Amara
-                </Typography>
-                <Typography
-                  variant='lead'
-                  color='white'
-                  className='mb-3 opacity-80'
-                >
-                  20 Oktober 2023.
-                </Typography>
-                <Typography variant='lead' color='white' className='opacity-80'>
-                  Save The Date
-                </Typography>
-              </div>
+              <div className='w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32'></div>
             </div>
           </div>
         </Carousel>
 
         {/* Container untuk firefly */}
         <div className='absolute inset-0 pointer-events-none firefly-container'></div>
+      </div>
+      <div className='absolute bottom-0 left-0 right-0 text-center pb-16'>
+        <Typography
+          variant='h1'
+          color='white'
+          className='mb-4 text-3xl md:text-4xl lg:text-5xl'
+        >
+          Sarizki & Amara
+        </Typography>
+        <Typography variant='lead' color='white' className='mb-3 opacity-80'>
+          20 Oktober 2023.
+        </Typography>
+        <Typography variant='lead' color='white' className='opacity-80'>
+          Save The Date
+        </Typography>
       </div>
     </div>
   );

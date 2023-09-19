@@ -54,8 +54,8 @@ const Header = () => {
               href='#'
               className='flex justify-center flex-col items-center gap-1'
             >
-              <FaHome className='text-grey opacity-50' />
-              <span className='text-yellow-300'>Home</span>
+              <FaHome className='text-gold' />
+              <span className='text-biru'>Home</span>
             </a>
           </li>
           <li>
@@ -63,8 +63,8 @@ const Header = () => {
               href='#'
               className='flex justify-center flex-col items-center gap-1'
             >
-              <FaImages className='text-grey opacity-50' />
-              <span className='text-grey opacity-50'>Gallery</span>
+              <FaImages className='text-gold' />
+              <span className='text-biru text-gold'>Gallery</span>
             </a>
           </li>
           <li>
@@ -72,8 +72,8 @@ const Header = () => {
               href='#'
               className='flex justify-center flex-col items-center gap-1'
             >
-              <FaFeatherAlt className='text-grey opacity-50' />
-              <span className='text-grey opacity-50'>RSVP</span>
+              <FaFeatherAlt className=' text-gold' />
+              <span className='text-biru'>RSVP</span>
             </a>
           </li>
           <li>
@@ -81,8 +81,8 @@ const Header = () => {
               href='#'
               className='flex justify-center flex-col items-center gap-1'
             >
-              <FaDove className='text-grey opacity-50' />
-              <span className='text-grey opacity-50'>Story</span>
+              <FaDove className=' text-gold' />
+              <span className='text-biru'>Story</span>
             </a>
           </li>
         </ul>

@@ -1,10 +1,21 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Gallery = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 500,
+    });
+  }, []);
   return (
     <div>
-      <div className='bg-gallery p-10 sm:py-8 lg:py-28 lg:px-0'>
-        <div className='mx-auto max-w-screen-2xl px-4 md:px-8'>
+      <div className='bg-gallery p-5 sm:py-8 lg:py-28 lg:px-0'>
+        <div
+          className='mx-auto max-w-screen-2xl md:px-8'
+          data-aos='zoom-in'
+          data-aos-duration='2000'
+        >
           <div className='mb-4 flex items-center justify-center gap-8 sm:mb-8 md:mb-12'>
             <div className='text-center'>
               <h2 className='text-2xl font-bold text-gold lg:text-5xl'>
@@ -16,7 +27,7 @@ const Gallery = () => {
             {/* image - start */}
             <a
               href='../banner-2.jpg'
-              className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80'
+              className='group relative flex h-48 items-end overflow-hidden rounded-lg  shadow-lg md:h-80'
             >
               <img
                 src='../banner-2.jpg'
@@ -32,7 +43,7 @@ const Gallery = () => {
             {/* image - start */}
             <a
               href='../3.jpg'
-              className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80'
+              className='group relative flex h-48 items-end overflow-hidden rounded-lg  shadow-lg md:col-span-2 md:h-80'
             >
               <img
                 src='../3.jpg'
@@ -48,7 +59,7 @@ const Gallery = () => {
             {/* image - start */}
             <a
               href='#'
-              className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80'
+              className='group relative flex h-48 items-end overflow-hidden rounded-lg  shadow-lg md:col-span-2 md:h-80'
             >
               <img
                 src='../1.jpg'
@@ -64,7 +75,7 @@ const Gallery = () => {
             {/* image - start */}
             <a
               href='#'
-              className='group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80'
+              className='group relative flex h-48 items-end overflow-hidden rounded-lg  shadow-lg md:h-80'
             >
               <img
                 src='../banner-1.jpg'

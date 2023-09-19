@@ -1,12 +1,22 @@
-import React from "react";
 import { FaMapMarkedAlt } from "react-icons/fa";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Map = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 500,
+    });
+  }, []);
   return (
     <div className=''>
-      <div className='bg-map py-9 lg:py-48 bg-black opacity-50'>
-        <div className='container mx-auto '>
-          <div className='text-center lg:pb-36  text-white'>
+      <div className='relative bg-map py-9 lg:py-48'>
+        {/* Overlay hitam dengan opasitas */}
+        <div className='absolute inset-0 bg-black opacity-50'></div>
+
+        <div className='container mx-auto relative'>
+          <div className='text-center lg:pb-36 text-white relative z-10'>
             <h2 className='text-3xl'>Celebrate Our Love</h2>
             <span className='text-3xl'> 20 OKT 2023</span>
           </div>
@@ -14,7 +24,12 @@ const Map = () => {
       </div>
 
       <div className='container mx-auto'>
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-0 m-0 lg:-mt-52 lg:mb-32 drop-shadow-2xl '>
+        <div
+          className='grid grid-cols-1 lg:grid-cols-3 gap-0 m-0 lg:-mt-52 lg:mb-32 drop-shadow-2xl '
+          data-aos='flip-left'
+          data-aos-easing='ease-out-cubic'
+          data-aos-duration='2000'
+        >
           <div className='p-12  bg-white'>
             <h2 className='text-2xl'>Ceremony</h2>
             <p className='mb-6'>
