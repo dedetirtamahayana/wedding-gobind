@@ -4,7 +4,7 @@ const Gallery = () => {
   return (
     <div>
       <div className='bg-flower'>
-        <div className='container lg mx-auto py-9'>
+        <div className='container mx-auto p-10 lg:py-9 lg:px-0'>
           <h2 className='text-3xl text-center'>Captured Moments</h2>
           <p className='text-center w-auto lg:w-96 mx-auto'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
@@ -12,7 +12,7 @@ const Gallery = () => {
           </p>
         </div>
       </div>
-      <div className='bg-gallery py-9 sm:py-8 lg:py-36'>
+      <div className='bg-gallery p-10 sm:py-8 lg:py-36 lg:px-0'>
         <div className='mx-auto max-w-screen-2xl px-4 md:px-8'>
           <div className='mb-4 flex items-center justify-center gap-8 sm:mb-8 md:mb-12'>
             <div className='text-center'>

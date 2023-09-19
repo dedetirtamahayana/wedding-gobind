@@ -9,7 +9,7 @@ import Map from "@/components/Map/Map";
 import Footer from "@/components/Footer/Footer";
 import { FaVolumeUp, FaVolumeMute } from "react-icons/fa";
 const Index = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   // Fungsi untuk mengontrol pemutaran audio
   const toggleAudio = () => {

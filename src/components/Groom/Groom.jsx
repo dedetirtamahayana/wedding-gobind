@@ -10,7 +10,7 @@ const Groom = () => {
   }, []);
 
   return (
-    <div className='bg-groom py-32'>
+    <div className='bg-groom py-10 lg:py-32 overflow-hidden'>
       <div className='container lg mx-auto'>
         <div className='text-center text-gold text-3xl flex flex-col items-center pb-5 lg:pb-0'>
           <h1>Groom and Bride</h1>
@@ -18,7 +18,7 @@ const Groom = () => {
         <div className='grid grid-cols-1 gap-2 lg:grid-cols-2 md:grid-cols-2 text-center text-white'>
           <div className='mx-auto mb-5 lg:mb-0' data-aos='fade-right'>
             <img
-              className='h-72 w-72 lg:h-96 lg:w-96 rounded-full object-cover object-center'
+              className='h-72 w-72 lg:h-96 lg:w-96 rounded-full object-cover object-center mx-auto'
               src='../fix-lakik.png'
               alt='nature image'
             />
@@ -33,11 +33,11 @@ const Groom = () => {
           </div>
           <div className='mx-auto mb-5 lg:mb-0' data-aos='fade-left'>
             <img
-              className='h-72 w-72 lg:h-96 lg:w-96 rounded-full object-cover object-center'
+              className='h-72 w-72 lg:h-96 lg:w-96 rounded-full object-cover object-center mx-auto'
               src='../fix-women.png'
               alt='nature image'
             />
-            <h2 className='text-3xl text-gold pb-2'>Sarizaki</h2>
+            <h2 className='text-3xl text-gold pb-2'>Sarizki</h2>
             <p className='w-96 mx-auto'>Putri Ketiga dari Pasangan</p>
             <p className='w-96 mx-auto'>dr. I Ketut Mudita Adnyana</p>
             <p className='w-96 mx-auto'>&</p>

@@ -6,7 +6,7 @@ const Map = () => {
     <div className=''>
       <div className='bg-map py-9 lg:py-48 bg-black opacity-50'>
         <div className='container mx-auto '>
-          <div className='text-center pb-36 text-white'>
+          <div className='text-center lg:pb-36  text-white'>
             <h2 className='text-3xl'>Celebrate Our Love</h2>
             <span className='text-3xl'> 20 OKT 2023</span>
           </div>

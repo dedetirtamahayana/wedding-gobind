@@ -2,7 +2,7 @@ import React from "react";
 
 const Doa = () => {
   return (
-    <div className='bg-flower py-9 px-5 lg:px-0 lg:py-36'>
+    <div className='bg-flower p-10 lg:px-0 lg:py-36'>
       <div className='container md mx-auto'>
         <div className='text-center pb-9'>
           <h2 className='text-3xl'>Our Love Story</h2>
