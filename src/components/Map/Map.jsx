@@ -4,7 +4,7 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 const Map = () => {
   return (
     <div className=''>
-      <div className='bg-map py-9 lg:py-36 bg-black opacity-50'>
+      <div className='bg-map py-9 lg:py-48 bg-black opacity-50'>
         <div className='container mx-auto '>
           <div className='text-center pb-36 text-white'>
             <h2 className='text-3xl'>Celebrate Our Love</h2>
@@ -14,7 +14,7 @@ const Map = () => {
       </div>
 
       <div className='container mx-auto'>
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-0 m-0 lg:-mt-36 drop-shadow-2xl '>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-0 m-0 lg:-mt-52 lg:mb-32 drop-shadow-2xl '>
           <div className='p-12  bg-white'>
             <h2 className='text-2xl'>Ceremony</h2>
             <p className='mb-6'>

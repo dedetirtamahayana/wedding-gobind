@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Rsvp = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -22,10 +23,19 @@ const Rsvp = () => {
     // Lakukan sesuatu dengan data yang di-submit, misalnya mengirimnya ke server
     console.log(formData);
   };
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 500,
+    });
+  }, []);
 
   return (
     <div className='bg-biru'>
-      <div className='container mx-auto py-9 lg:py-36 w-72 lg:w-5/12 '>
+      <div
+        className='container mx-auto py-9 lg:py-36 w-72 lg:w-5/12'
+        data-aos='zoom-in-up'
+      >
         <div className='text-center pb-8'>
           <h2 className='text-3xl text-white'>Are You Attending?</h2>
           <p className='text-white'>

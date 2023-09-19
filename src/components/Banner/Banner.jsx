@@ -8,7 +8,7 @@ const Banner = () => {
       const screenWidth = window.innerWidth;
       const screenHeight = window.innerHeight;
 
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 5; i++) {
         const firefly = document.createElement("div");
         firefly.className = "firefly";
 
@@ -46,7 +46,15 @@ const Banner = () => {
     <div className='relative overflow-hidden'>
       {/* Container untuk gambar dan firefly */}
       <div className='relative'>
-        <Carousel className='h-800' style={{ height: "800px" }}>
+        <Carousel
+          className='h-800'
+          style={{ height: "800px" }}
+          autoplay={true}
+          controls={false}
+          navigation={false}
+          loop={true}
+          transition={{ duration: 2 }}
+        >
           <div className='relative h-full w-full'>
             <img
               src='../3.jpg'
