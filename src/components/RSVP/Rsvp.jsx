@@ -4,17 +4,17 @@ import "aos/dist/aos.css";
 import axios from "axios";
 const Rsvp = () => {
   const [formValues, setFormValues] = useState({
-    name: "",
-    attending: "",
-    guest: "",
-    message: "",
+    Name: "",
+    Attending: "",
+    Guest: "",
+    Message: "",
   });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://script.google.com/macros/s/AKfycbxnr_aPIRq6T3JaYQupPWE0QnnLWwg_maWur8BMVuCm/dev",
+        "https://script.google.com/macros/s/AKfycbwAE976Dy5HwaGrEKNs60iQV1hivFvsGyHm6MfgqU6jemwaR8anUmfZd12cbVzDg-Nz9A/exec",
         formValues
       );
       console.log(response.data);
@@ -22,6 +22,7 @@ const Rsvp = () => {
       console.log(error);
     }
   };
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -42,7 +43,7 @@ const Rsvp = () => {
           className='bg-white rounded-2xl shadow-md p-6 md:p-8 lg:p-10'
           style={{ height: "100%" }}
         >
-          <form onSubmit={handleSubmit}>
+          <form className='form' onSubmit={handleSubmit}>
             <div class=''>
               <div className='mb-4'>
                 <label
@@ -56,9 +57,9 @@ const Rsvp = () => {
                   id='firstName'
                   name='firstName'
                   onChange={(e) => {
-                    setFormValues({ ...formValues, name: e.target.value });
+                    setFormValues({ ...formValues, Name: e.target.value });
                   }}
-                  value={formValues.name ?? ""}
+                  value={formValues.Name ?? ""}
                   placeholder='Enter your first name'
                   className='w-full p-3 border border-biru  focus:outline-none focus:border-indigo-500'
                 />
@@ -67,12 +68,12 @@ const Rsvp = () => {
 
             <div className='mb-4'>
               <select
-                id='option1'
-                name='option1'
+                id=''
+                name='Attending'
                 onChange={(e) => {
-                  setFormValues({ ...formValues, attending: e.target.value });
+                  setFormValues({ ...formValues, Attending: e.target.value });
                 }}
-                value={formValues.attending ?? ""}
+                value={formValues.Attending ?? ""}
                 className='w-full p-3 border border-biru  focus:outline-none focus:border-indigo-500'
               >
                 <option value=''>I am attending</option>
@@ -82,12 +83,12 @@ const Rsvp = () => {
             </div>
             <div className='mb-4'>
               <select
-                id='option2'
-                name='option2'
+                id=''
+                name='Guest'
                 onChange={(e) => {
-                  setFormValues({ ...formValues, guest: e.target.value });
+                  setFormValues({ ...formValues, Guest: e.target.value });
                 }}
-                value={formValues.guest ?? ""}
+                value={formValues.Guest ?? ""}
                 className='w-full p-3 border border-biru  focus:outline-none focus:border-indigo-500'
               >
                 <option value=''>Number of guests</option>
@@ -109,9 +110,9 @@ const Rsvp = () => {
                 id='message'
                 name='message'
                 onChange={(e) => {
-                  setFormValues({ ...formValues, message: e.target.value });
+                  setFormValues({ ...formValues, Message: e.target.value });
                 }}
-                value={formValues.message ?? ""}
+                value={formValues.Message ?? ""}
                 placeholder='Type your message here'
                 rows='4'
                 className='w-full p-3 border border-biru  focus:outline-none focus:border-indigo-500'
