@@ -1,27 +1,26 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import axios from "axios";
 const Rsvp = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+  const [formValues, setFormValues] = useState({
+    name: "",
+    attending: "",
+    guest: "",
     message: "",
-    option1: "",
-    option2: "",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Lakukan sesuatu dengan data yang di-submit, misalnya mengirimnya ke server
-    console.log(formData);
+    try {
+      const response = await axios.post(
+        "https://script.google.com/macros/s/AKfycbxnr_aPIRq6T3JaYQupPWE0QnnLWwg_maWur8BMVuCm/dev",
+        formValues
+      );
+      console.log(response.data);
+    } catch (error) {
+      console.log(error);
+    }
   };
   useEffect(() => {
     AOS.init({
@@ -37,14 +36,14 @@ const Rsvp = () => {
         data-aos='zoom-in-up'
       >
         <div className='text-center pb-8'>
-          <h2 className='text-5xl text-gold'>Are You Attending?</h2>
+          <h2 className='text-5xl text-gold custom-text'>Are You Attending?</h2>
         </div>
         <div
           className='bg-white rounded-2xl shadow-md p-6 md:p-8 lg:p-10'
           style={{ height: "100%" }}
         >
           <form onSubmit={handleSubmit}>
-            <div class='grid grid-cols-2 gap-4'>
+            <div class=''>
               <div className='mb-4'>
                 <label
                   htmlFor='firstName'
@@ -56,69 +55,47 @@ const Rsvp = () => {
                   type='text'
                   id='firstName'
                   name='firstName'
-                  value={formData.firstName}
-                  onChange={handleChange}
+                  onChange={(e) => {
+                    setFormValues({ ...formValues, name: e.target.value });
+                  }}
+                  value={formValues.name ?? ""}
                   placeholder='Enter your first name'
-                  className='w-full p-3 border border-biru  focus:outline-none focus:border-indigo-500'
-                />
-              </div>
-              <div className='mb-4'>
-                <label
-                  htmlFor='lastName'
-                  className='block text-black font-bold mb-2'
-                >
-                  Last Name
-                </label>
-                <input
-                  type='text'
-                  id='lastName'
-                  name='lastName'
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  placeholder='Enter your last name'
                   className='w-full p-3 border border-biru  focus:outline-none focus:border-indigo-500'
                 />
               </div>
             </div>
 
             <div className='mb-4'>
-              <label
-                htmlFor='option1'
-                className='block text-black font-bold mb-2'
-              >
-                Select Option 1
-              </label>
               <select
                 id='option1'
                 name='option1'
-                value={formData.option1}
-                onChange={handleChange}
+                onChange={(e) => {
+                  setFormValues({ ...formValues, attending: e.target.value });
+                }}
+                value={formValues.attending ?? ""}
                 className='w-full p-3 border border-biru  focus:outline-none focus:border-indigo-500'
               >
-                <option value=''>Select an option</option>
-                <option value='Option 1A'>Option 1A</option>
-                <option value='Option 1B'>Option 1B</option>
-                <option value='Option 1C'>Option 1C</option>
+                <option value=''>I am attending</option>
+                <option value='I am attending'>I am attending</option>
+                <option value='I am not attending'>I am not attending</option>
               </select>
             </div>
             <div className='mb-4'>
-              <label
-                htmlFor='option2'
-                className='block text-black font-bold mb-2'
-              >
-                Select Option 2
-              </label>
               <select
                 id='option2'
                 name='option2'
-                value={formData.option2}
-                onChange={handleChange}
+                onChange={(e) => {
+                  setFormValues({ ...formValues, guest: e.target.value });
+                }}
+                value={formValues.guest ?? ""}
                 className='w-full p-3 border border-biru  focus:outline-none focus:border-indigo-500'
               >
-                <option value=''>Select an option</option>
-                <option value='Option 2A'>Option 2A</option>
-                <option value='Option 2B'>Option 2B</option>
-                <option value='Option 2C'>Option 2C</option>
+                <option value=''>Number of guests</option>
+                <option value='1'>1</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
               </select>
             </div>
             <div className='mb-4'>
@@ -131,8 +108,10 @@ const Rsvp = () => {
               <textarea
                 id='message'
                 name='message'
-                value={formData.message}
-                onChange={handleChange}
+                onChange={(e) => {
+                  setFormValues({ ...formValues, message: e.target.value });
+                }}
+                value={formValues.message ?? ""}
                 placeholder='Type your message here'
                 rows='4'
                 className='w-full p-3 border border-biru  focus:outline-none focus:border-indigo-500'

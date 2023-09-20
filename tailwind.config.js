@@ -13,9 +13,9 @@ module.exports = withMT({
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily: {
-        sans: ["January-Shine,handwritten"],
-      },
+      // fontFamily: {
+      //   sans: [""],
+      // },
       colors: {
         biru: "#1a1a40ff",
         gold: "#D3B04F",

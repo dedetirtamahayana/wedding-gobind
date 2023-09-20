@@ -12,7 +12,7 @@ const Groom = () => {
   return (
     <div className='bg-groom  overflow-hidden'>
       <div className='container py-5 px-5 lg:px-0 lg:py-32 mx-auto'>
-        <div className='text-center text-gold text-5xl flex flex-col items-center pb-5 lg:pb-0'>
+        <div className='text-center text-gold text-5xl flex flex-col items-center pb-5 lg:pb-0 custom-text'>
           <h1>Groom and Bride</h1>
         </div>
         <div className='grid grid-cols-1 gap-2 lg:grid-cols-2 md:grid-cols-2 text-center text-white'>

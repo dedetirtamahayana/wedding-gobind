@@ -70,7 +70,15 @@
   margin-top: -210px;
   margin-bottom: 135px;
 }
+@font-face {
+  font-family: 'alex';
+  src: url('../../public/AlexBrush-Regular.ttf') format('truetype');
+  /* Tambahkan format font lain jika diperlukan */
+}
 
+.custom-text {
+  font-family: 'alex', sans-serif;
+}
 @keyframes fireflyAnimation {
   0% {
     transform: translate(0, 0) scale(1);

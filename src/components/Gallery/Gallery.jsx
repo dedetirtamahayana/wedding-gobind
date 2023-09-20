@@ -18,7 +18,7 @@ const Gallery = () => {
         >
           <div className='mb-4 flex items-center justify-center gap-8 sm:mb-8 md:mb-12'>
             <div className='text-center'>
-              <h2 className='text-2xl font-bold text-gold lg:text-5xl'>
+              <h2 className='text-2xl font-bold text-gold lg:text-5xl custom-text'>
                 Sweet Memories
               </h2>
             </div>

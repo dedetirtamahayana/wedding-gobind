@@ -9,7 +9,9 @@ const Footer = () => {
           src='../bulet.png'
           alt='nature image'
         />
-        <h1 className='text-4xl text-center'>We Are Expecting You</h1>
+        <h1 className='text-4xl text-center custom-text'>
+          We Are Expecting You
+        </h1>
       </div>
 
       <div className='bg-biru py-7 px-4'></div>

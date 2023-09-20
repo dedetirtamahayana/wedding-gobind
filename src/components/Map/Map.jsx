@@ -17,8 +17,8 @@ const Map = () => {
 
         <div className='container mx-auto relative'>
           <div className='text-center lg:pb-36 text-white relative z-10'>
-            <h2 className='text-3xl'>Celebrate Our Love</h2>
-            <span className='text-3xl'> 20 OKT 2023</span>
+            <h2 className='text-5xl custom-text'>Celebrate Our Love</h2>
+            <span className='text-3xl custom-text'> 20 OKT 2023</span>
           </div>
         </div>
       </div>
