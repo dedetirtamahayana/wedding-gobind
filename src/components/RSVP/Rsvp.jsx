@@ -59,13 +59,13 @@ const Rsvp = () => {
   };
 
   return (
-    <div className='bg-black'>
+    <div className='bg-gallery'>
       <div
         className='container mx-auto py-9 lg:py-36 w-72 lg:w-5/12'
         data-aos='zoom-in-up'
       >
         <div className='text-center pb-8'>
-          <h2 className='text-5xl text-white custom-text'>
+          <h2 className='text-5xl text-black custom-text'>
             Are You Attending?
           </h2>
         </div>
@@ -80,7 +80,7 @@ const Rsvp = () => {
                   type='text'
                   id='firstName'
                   name='Name'
-                  placeholder='Enter your first name'
+                  placeholder='Enter your name'
                   className='w-full p-3 border border-biru  focus:outline-none focus:border-indigo-500'
                 />
               </div>

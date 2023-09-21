@@ -10,9 +10,8 @@ const Map = () => {
     });
   }, []);
   return (
-    <div className='bg-black'>
+    <div className=''>
       <div className='relative bg-map py-9 lg:py-48'>
-        {/* Overlay hitam dengan opasitas */}
         <div className='absolute inset-0 bg-black opacity-50'></div>
 
         <div className='container mx-auto relative'>
@@ -23,7 +22,7 @@ const Map = () => {
         </div>
       </div>
 
-      <div className='container mx-auto bg-black'>
+      <div className='container mx-auto '>
         <div
           className='grid grid-cols-1 lg:grid-cols-3 gap-0 m-0 lg:-mt-52 lg:mb-32 drop-shadow-2xl '
           data-aos='flip-left'
@@ -31,59 +30,52 @@ const Map = () => {
           data-aos-duration='2000'
         >
           <div className='p-12  bg-white'>
-            <h2 className='text-2xl'>Ceremony</h2>
+            <h2 className='text-2xl'>Sesi 1</h2>
             <p className='mb-6'>
-              Friday, February 14, 2020
+              Jumat, Oktober 20, 2023
               <br />
-              09:00 – 11:00
+              16:00 – 18:00
             </p>
             <p className='mb-6'>
-              St. Patrick’s Cathedral
+              Griya Taksu Event Space
               <br />
-              5th Avenue, New York, NY 10019
-              <br />
-              United States
+              Jl.Ir.Sutami,Kemenuh,Kecamatan Sukawati, Kabupaten Gianyar,Bali
             </p>
           </div>
           <div className='p-12  lg:border-x-2 lg:border-gold bg-white'>
-            <h2 className='text-2xl'>Ceremony</h2>
+            <h2 className='text-2xl'>Sesi 2</h2>
             <p className='mb-6'>
-              Friday, February 14, 2020
+              Jumat, Oktober 20, 2023
               <br />
-              09:00 – 11:00
+              18:00 – 19:00
             </p>
             <p className='mb-6'>
-              St. Patrick’s Cathedral
+              Griya Taksu Event Space
               <br />
-              5th Avenue, New York, NY 10019
-              <br />
-              United States
+              Jl.Ir.Sutami,Kemenuh,Kecamatan Sukawati, Kabupaten Gianyar,Bali
             </p>
             <div className='text-center'>
               <a
-                href=''
+                href='https://maps.app.goo.gl/MU7j3naQvcRRx6nw6?g_st=iw'
                 className='flex items-center justify-center text-black hover:text-gold'
               >
-                <FaMapMarkedAlt className='mr-2' />{" "}
-                {/* Adjust the margin as needed */}
+                <FaMapMarkedAlt className='mr-2' />
+
                 <span className=''>GET DIRECTION</span>
               </a>
             </div>
           </div>
           <div className='p-12  bg-white'>
-            <h2 className='text-2xl'>Ceremony</h2>
+            <h2 className='text-2xl'>Sesi 3</h2>
             <p className='mb-6'>
-              Friday, February 14, 2020
+              Jumat, Oktober 20, 2023
               <br />
-              09:00 – 11:00
+              19:00 – Selesai
             </p>
-
             <p className='mb-6'>
-              St. Patrick’s Cathedral
+              Griya Taksu Event Space
               <br />
-              5th Avenue, New York, NY 10019
-              <br />
-              United States
+              Jl.Ir.Sutami,Kemenuh,Kecamatan Sukawati, Kabupaten Gianyar,Bali
             </p>
           </div>
         </div>

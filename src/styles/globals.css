@@ -45,7 +45,18 @@
     background-size: cover;
     background-attachment: fixed;
 }
-
+.bg-groom{
+  background-image: url(../../public/bg-coba.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-gallery{
+  background-image: url(../../public/bg-coba2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .img-lakik,
 .img-women{
   width: 300px;
