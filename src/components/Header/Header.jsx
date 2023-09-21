@@ -10,7 +10,7 @@ const Header = () => {
   console.log(menuVisible);
 
   return (
-    <nav className='py-7 px-4 bg-biru'>
+    <nav className='py-7 px-4 bg-black'>
       <div className='container mx-auto'>
         <div className='flex justify-between items-center'>
           <img src='../logo-asa.png' alt='logo' className='w-12' />
