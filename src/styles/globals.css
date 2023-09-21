@@ -37,17 +37,7 @@
   opacity: 0.8;
   animation: fireflyAnimation linear infinite;
 }
-.bg-groom{
-  background-image: url(../../public/bg-2.png);
-  background-position: center center;
-  background-size: cover;
 
-}
-.bg-gallery{
-  background-image: url(../../public/bg-1.png);
-  background-position: center center;
-  background-size: cover;
-}
 .bg-map{
   background-image: url(../../public/banner-2.jpg);
     background-position: center center;
@@ -55,11 +45,7 @@
     background-size: cover;
     background-attachment: fixed;
 }
-.bg-flower{
-  background-image: url(../../public/bg-flower.jpg);
-  background-position: center center;
-  background-size: cover;
-}
+
 .img-lakik,
 .img-women{
   width: 300px;
@@ -79,6 +65,7 @@
 .custom-text {
   font-family: 'alex', sans-serif;
 }
+
 @keyframes fireflyAnimation {
   0% {
     transform: translate(0, 0) scale(1);

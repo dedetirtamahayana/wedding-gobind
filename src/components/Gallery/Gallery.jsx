@@ -10,7 +10,7 @@ const Gallery = () => {
   }, []);
   return (
     <div>
-      <div className='bg-gallery p-5 sm:py-8 lg:py-28 lg:px-0'>
+      <div className='bg-black p-5 sm:py-8 lg:py-28 lg:px-0'>
         <div
           className='mx-auto max-w-screen-2xl md:px-8'
           data-aos='zoom-in'
@@ -18,7 +18,7 @@ const Gallery = () => {
         >
           <div className='mb-4 flex items-center justify-center gap-8 sm:mb-8 md:mb-12'>
             <div className='text-center'>
-              <h2 className='text-2xl font-bold text-gold lg:text-5xl custom-text'>
+              <h2 className='text-2xl font-bold text-white lg:text-5xl custom-text'>
                 Sweet Memories
               </h2>
             </div>

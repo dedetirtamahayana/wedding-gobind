@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import axios from "axios";
+import Swal from "sweetalert2";
 
 const Rsvp = () => {
   const [attending, setAttending] = useState("");
@@ -14,24 +14,38 @@ const Rsvp = () => {
     });
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formEle = document.querySelector("form");
     const formDatab = new FormData(formEle);
-    fetch(
-      "https://script.google.com/macros/s/AKfycbwAE976Dy5HwaGrEKNs60iQV1hivFvsGyHm6MfgqU6jemwaR8anUmfZd12cbVzDg-Nz9A/exec",
-      {
-        method: "POST",
-        body: formDatab,
+    try {
+      const res = await fetch(
+        "https://script.google.com/macros/s/AKfycbwAE976Dy5HwaGrEKNs60iQV1hivFvsGyHm6MfgqU6jemwaR8anUmfZd12cbVzDg-Nz9A/exec",
+        {
+          method: "POST",
+          body: formDatab,
+        }
+      );
+      if (!res.ok) {
+        throw new Error("Respons jaringan tidak berhasil");
       }
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((error) => {
-        console.log(error);
+
+      // Tampilkan pesan sukses ke pengguna
+      Swal.fire({
+        title: "Sukses!",
+        text: "Pesan Anda berhasil dikirim.",
+        icon: "success",
+        confirmButtonText: "OK",
       });
+    } catch (error) {
+      console.error("Kesalahan saat mengirim permintaan:", error);
+      Swal.fire({
+        title: "Error!",
+        text: "Terjadi kesalahan saat mengirim pesan Anda.",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    }
   };
 
   const handleAttendingChange = (e) => {
@@ -45,13 +59,15 @@ const Rsvp = () => {
   };
 
   return (
-    <div className='bg-biru'>
+    <div className='bg-black'>
       <div
         className='container mx-auto py-9 lg:py-36 w-72 lg:w-5/12'
         data-aos='zoom-in-up'
       >
         <div className='text-center pb-8'>
-          <h2 className='text-5xl text-gold custom-text'>Are You Attending?</h2>
+          <h2 className='text-5xl text-white custom-text'>
+            Are You Attending?
+          </h2>
         </div>
         <div
           className='bg-white rounded-2xl shadow-md p-6 md:p-8 lg:p-10'
@@ -77,7 +93,7 @@ const Rsvp = () => {
                 className='w-full p-3 border border-biru  focus:outline-none focus:border-indigo-500'
                 onChange={handleAttendingChange}
               >
-                <option value=''>I am attending</option>
+                <option value=''>Are you attending?</option>
                 <option value='I am attending'>I am attending</option>
                 <option value='I am not attending'>I am not attending</option>
               </select>
@@ -113,7 +129,7 @@ const Rsvp = () => {
             <div className='flex justify-center items-center'>
               <button
                 type='submit'
-                className='bg-biru text-gold py-3 px-6 hover:bg-indigo-600 transition duration-200 rounded-xl'
+                className='bg-black text-white py-3 px-6 hover:animate-pulse transition duration-200 rounded-xl'
                 onClick={handleSubmit}
               >
                 SEND MESSAGE

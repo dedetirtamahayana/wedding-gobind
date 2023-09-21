@@ -10,7 +10,7 @@ const Map = () => {
     });
   }, []);
   return (
-    <div className=''>
+    <div className='bg-black'>
       <div className='relative bg-map py-9 lg:py-48'>
         {/* Overlay hitam dengan opasitas */}
         <div className='absolute inset-0 bg-black opacity-50'></div>
@@ -23,7 +23,7 @@ const Map = () => {
         </div>
       </div>
 
-      <div className='container mx-auto'>
+      <div className='container mx-auto bg-black'>
         <div
           className='grid grid-cols-1 lg:grid-cols-3 gap-0 m-0 lg:-mt-52 lg:mb-32 drop-shadow-2xl '
           data-aos='flip-left'
