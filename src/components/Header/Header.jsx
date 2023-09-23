@@ -151,7 +151,7 @@ const Header = () => {
           color='white'
           className='mb-4 text-3xl md:text-4xl lg:text-7xl custom-text'
         >
-          Sarizki & Amara
+          Amara & Sarizki
         </Typography>
         <Typography variant='lead' color='white' className='mb-3 opacity-80'>
           20 Oktober 2023.
