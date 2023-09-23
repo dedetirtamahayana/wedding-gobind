@@ -48,7 +48,6 @@ const Undangan = ({ setIsPlaying, isPlaying }) => {
 
       <div className=''>
         <Header />
-        <Banner />
         <Groom />
         <Gallery />
         <Rsvp />
@@ -57,7 +56,7 @@ const Undangan = ({ setIsPlaying, isPlaying }) => {
       </div>
 
       <audio id='myAudio' hidden>
-        <source src='/lagu.mp3' type='audio/mpeg' />
+        <source src='/lagu-wedding.mp3' type='audio/mpeg' />
         Your browser does not support the audio element.
       </audio>
 

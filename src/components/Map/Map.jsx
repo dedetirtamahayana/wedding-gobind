@@ -29,7 +29,7 @@ const Map = () => {
           data-aos-easing='ease-out-cubic'
           data-aos-duration='2000'
         >
-          <div className='p-12  bg-white'>
+          <div className='p-12 bg-white lg:w-auto lg:h-80 w-full'>
             <h2 className='text-2xl'>Sesi 1</h2>
             <p className='mb-6'>
               Jumat, Oktober 20, 2023
@@ -39,10 +39,10 @@ const Map = () => {
             <p className='mb-6'>
               Griya Taksu Event Space
               <br />
-              Jl.Ir.Sutami,Kemenuh,Kecamatan Sukawati, Kabupaten Gianyar,Bali
+              Jl.Ir.Sutami, Kemenuh, Kecamatan Sukawati, Kabupaten Gianyar, Bali
             </p>
           </div>
-          <div className='p-12  lg:border-x-2 lg:border-gold bg-white'>
+          <div className='p-12 lg:border-x-2 lg:border-gold bg-white lg:w-auto lg:h-80 w-full'>
             <h2 className='text-2xl'>Sesi 2</h2>
             <p className='mb-6'>
               Jumat, Oktober 20, 2023
@@ -52,7 +52,7 @@ const Map = () => {
             <p className='mb-6'>
               Griya Taksu Event Space
               <br />
-              Jl.Ir.Sutami,Kemenuh,Kecamatan Sukawati, Kabupaten Gianyar,Bali
+              Jl.Ir.Sutami, Kemenuh, Kecamatan Sukawati, Kabupaten Gianyar, Bali
             </p>
             <div className='text-center'>
               <a
@@ -65,7 +65,7 @@ const Map = () => {
               </a>
             </div>
           </div>
-          <div className='p-12  bg-white'>
+          <div className='p-12  bg-white lg:w-auto lg:h-80 w-full'>
             <h2 className='text-2xl'>Sesi 3</h2>
             <p className='mb-6'>
               Jumat, Oktober 20, 2023
@@ -75,7 +75,7 @@ const Map = () => {
             <p className='mb-6'>
               Griya Taksu Event Space
               <br />
-              Jl.Ir.Sutami,Kemenuh,Kecamatan Sukawati, Kabupaten Gianyar,Bali
+              Jl.Ir.Sutami, Kemenuh, Kecamatan Sukawati, Kabupaten Gianyar, Bali
             </p>
           </div>
         </div>

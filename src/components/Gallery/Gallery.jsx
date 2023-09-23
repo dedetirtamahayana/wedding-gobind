@@ -1,6 +1,13 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LightGallery from "lightgallery/react";
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
+
 const Gallery = () => {
   useEffect(() => {
     AOS.init({
@@ -8,6 +15,7 @@ const Gallery = () => {
       offset: 500,
     });
   }, []);
+
   return (
     <div>
       <div className='bg-gallery p-5 sm:py-8 lg:py-28 lg:px-0'>
@@ -18,75 +26,44 @@ const Gallery = () => {
         >
           <div className='mb-4 flex items-center justify-center gap-8 sm:mb-8 md:mb-12'>
             <div className='text-center'>
-              <h2 className='text-2xl text-black lg:text-5xl custom-text'>
+              <h2 className='text-5xl text-black custom-text'>
                 Sweet Memories
               </h2>
             </div>
           </div>
-          <div className='grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8'>
-            {/* image - start */}
-            <a
-              href='../banner-2.jpg'
-              className='group relative flex h-48 items-end overflow-hidden rounded-lg  shadow-lg md:h-80'
-            >
-              <img
-                src='../banner-2.jpg'
-                loading='lazy'
-                alt='Photo by Minh Pham'
-                className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
-              />
-
-              <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
-            </a>
-            {/* image - end */}
-
-            {/* image - start */}
-            <a
-              href='../3.jpg'
-              className='group relative flex h-48 items-end overflow-hidden rounded-lg  shadow-lg md:col-span-2 md:h-80'
-            >
-              <img
-                src='../3.jpg'
-                loading='lazy'
-                alt='Photo by Magicle'
-                className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
-              />
-
-              <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
-            </a>
-            {/* image - end */}
-
-            {/* image - start */}
-            <a
-              href='#'
-              className='group relative flex h-48 items-end overflow-hidden rounded-lg  shadow-lg md:col-span-2 md:h-80'
-            >
-              <img
-                src='../1.jpg'
-                loading='lazy'
-                alt='Photo by Martin Sanchez'
-                className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
-              />
-
-              <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
-            </a>
-            {/* image - end */}
-
-            {/* image - start */}
-            <a
-              href='#'
-              className='group relative flex h-48 items-end overflow-hidden rounded-lg  shadow-lg md:h-80'
-            >
-              <img
-                src='../banner-1.jpg'
-                loading='lazy'
-                alt='Photo by Lorenzo Herrera'
-                className='absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110'
-              />
-
-              <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50'></div>
-            </a>
-            {/* image - end */}
+          <div className='flex flex-wrap space-x-4'>
+            <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
+              <a
+                href='/banner.png'
+                className='block group relative overflow-hidden rounded-lg shadow-lg mb-4'
+              >
+                <img
+                  className='gallery-image transition duration-200 group-hover:scale-110'
+                  alt='Jeep'
+                  src='/banner.png'
+                />
+              </a>
+              <a
+                href='/gallery-men.png'
+                className='w-auto canvas-gallery m-0 lg:mr-2 lg:canvas-gallery inline-block group relative overflow-hidden rounded-lg shadow-lg'
+              >
+                <img
+                  className='w-full gallery-image transition duration-200 group-hover:scale-110'
+                  alt='Tesla'
+                  src='/gallery-men.png'
+                />
+              </a>
+              <a
+                href='gallery-women.png'
+                className='w-auto canvas-gallery m-0 lg:ml-2 lg:canvas-gallery inline-block group relative overflow-hidden rounded-lg shadow-lg'
+              >
+                <img
+                  className='w-full gallery-image transition duration-200 group-hover:scale-110'
+                  alt='Jeep'
+                  src='gallery-women.png'
+                />
+              </a>
+            </LightGallery>
           </div>
         </div>
       </div>
