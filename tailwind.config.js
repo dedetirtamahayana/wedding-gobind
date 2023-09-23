@@ -20,6 +20,9 @@ module.exports = withMT({
         biru: "#1a1a40ff",
         gold: "#D3B04F",
       },
+      width: {
+        620: "620px",
+      },
     },
   },
   plugins: [],

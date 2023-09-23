@@ -35,7 +35,7 @@ const Gallery = () => {
             <LightGallery speed={500} plugins={[lgThumbnail, lgZoom]}>
               <a
                 href='/banner.png'
-                className='block group relative overflow-hidden rounded-lg shadow-lg mb-4'
+                className='block group relative overflow-hidden rounded-lg shadow-lg mb-4 w-auto h-auto'
               >
                 <img
                   className='gallery-image transition duration-200 group-hover:scale-110'
@@ -45,7 +45,7 @@ const Gallery = () => {
               </a>
               <a
                 href='/gallery-men.png'
-                className='w-auto m-0 lg:mr-2 lg:canvas-gallery inline-block group relative overflow-hidden rounded-lg shadow-lg'
+                className='w-auto m-0 lg:mr-2 lg:w-620 inline-block group relative overflow-hidden rounded-lg shadow-lg'
               >
                 <img
                   className='w-full gallery-image transition duration-200 group-hover:scale-110'
@@ -55,7 +55,7 @@ const Gallery = () => {
               </a>
               <a
                 href='gallery-women.png'
-                className='w-auto m-0 lg:ml-2 lg:canvas-gallery inline-block group relative overflow-hidden rounded-lg shadow-lg'
+                className='w-auto m-0 lg:ml-2 lg:w-620 inline-block group relative overflow-hidden rounded-lg shadow-lg'
               >
                 <img
                   className='w-full gallery-image transition duration-200 group-hover:scale-110'
