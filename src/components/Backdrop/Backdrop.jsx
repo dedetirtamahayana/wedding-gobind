@@ -15,7 +15,7 @@ const Backdrop = ({ onClick }) => {
       <div className=' text-white z-10 text-center mb-4'>
         <img src='/img-circle.png' alt='img-circle' className='w-60 mx-auto' />
         <h1 className='text-7xl custom-text mb-4'>Amara & Sarizki</h1>
-        <p>Undangan Pawiwahan & Mepandes</p>
+        <p>Undangan Pawiwahan</p>
         <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
       </div>
 
