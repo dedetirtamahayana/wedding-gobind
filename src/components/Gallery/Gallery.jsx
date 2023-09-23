@@ -39,7 +39,7 @@ const Gallery = () => {
               >
                 <img
                   className='gallery-image transition duration-200 group-hover:scale-110'
-                  alt='Jeep'
+                  alt='Wedding'
                   src='/banner.png'
                 />
               </a>
@@ -49,7 +49,7 @@ const Gallery = () => {
               >
                 <img
                   className='w-full gallery-image transition duration-200 group-hover:scale-110'
-                  alt='Tesla'
+                  alt='Amara'
                   src='/gallery-men.png'
                 />
               </a>
@@ -59,7 +59,7 @@ const Gallery = () => {
               >
                 <img
                   className='w-full gallery-image transition duration-200 group-hover:scale-110'
-                  alt='Jeep'
+                  alt='Sarizki'
                   src='gallery-women.png'
                 />
               </a>
