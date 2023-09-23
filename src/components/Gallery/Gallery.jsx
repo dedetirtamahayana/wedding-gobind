@@ -17,7 +17,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div>
+    <div id='gallery'>
       <div className='bg-gallery p-5 sm:py-8 lg:py-28 lg:px-0'>
         <div
           className='mx-auto max-w-screen-2xl md:px-8'
@@ -45,7 +45,7 @@ const Gallery = () => {
               </a>
               <a
                 href='/gallery-men.png'
-                className='w-auto canvas-gallery m-0 lg:mr-2 lg:canvas-gallery inline-block group relative overflow-hidden rounded-lg shadow-lg'
+                className='w-auto m-0 lg:mr-2 lg:canvas-gallery inline-block group relative overflow-hidden rounded-lg shadow-lg'
               >
                 <img
                   className='w-full gallery-image transition duration-200 group-hover:scale-110'
@@ -55,7 +55,7 @@ const Gallery = () => {
               </a>
               <a
                 href='gallery-women.png'
-                className='w-auto canvas-gallery m-0 lg:ml-2 lg:canvas-gallery inline-block group relative overflow-hidden rounded-lg shadow-lg'
+                className='w-auto m-0 lg:ml-2 lg:canvas-gallery inline-block group relative overflow-hidden rounded-lg shadow-lg'
               >
                 <img
                   className='w-full gallery-image transition duration-200 group-hover:scale-110'

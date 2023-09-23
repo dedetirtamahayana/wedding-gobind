@@ -48,7 +48,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className='relative overflow-hidden'>
+    <div className='relative overflow-hidden' id='home'>
       <nav
         className={`py-7 px-4 absolute z-50 top-0 left-0 w-full ${
           menuVisible ? "bg-opacity-50" : "bg-transparent"
@@ -60,16 +60,16 @@ const Header = () => {
 
             <ul className='hidden lg:flex gap-9 text-white'>
               <li className='text-grey text-lg'>
-                <a href=''>Home</a>
+                <a href='#home'>Home</a>
               </li>
               <li className='text-grey text-lg'>
-                <a href=''>Gallery</a>
+                <a href='#gallery'>Gallery</a>
               </li>
               <li className='text-grey text-lg'>
-                <a href=''>RSVP</a>
+                <a href='#rsvp'>RSVP</a>
               </li>
               <li className='text-grey text-lg'>
-                <a href=''>Story</a>
+                <a href='#map'>Maps</a>
               </li>
             </ul>
 
@@ -101,7 +101,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href='#'
+                href='#gallery'
                 className='flex justify-center flex-col items-center gap-1'
               >
                 <FaImages className='text-gold' />
@@ -110,7 +110,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href='#'
+                href='#rsvp'
                 className='flex justify-center flex-col items-center gap-1'
               >
                 <FaFeatherAlt className='text-gold' />
@@ -119,11 +119,11 @@ const Header = () => {
             </li>
             <li>
               <a
-                href='#'
+                href='#map'
                 className='flex justify-center flex-col items-center gap-1'
               >
                 <FaDove className='text-gold' />
-                <span className='text-biru'>Story</span>
+                <span className='text-biru'>Maps</span>
               </a>
             </li>
           </ul>

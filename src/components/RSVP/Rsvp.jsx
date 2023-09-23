@@ -59,7 +59,7 @@ const Rsvp = () => {
   };
 
   return (
-    <div className='bg-gallery'>
+    <div className='bg-gallery' id='rsvp'>
       <div
         className='container mx-auto py-9 px-5 lg:px-0 lg:py-36 w-72 lg:w-5/12'
         data-aos='zoom-in-up'

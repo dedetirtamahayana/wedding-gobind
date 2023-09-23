@@ -10,7 +10,7 @@ const Map = () => {
     });
   }, []);
   return (
-    <div className=''>
+    <div id='map'>
       <div className='relative bg-map py-9 lg:py-48'>
         <div className='absolute inset-0 bg-black opacity-50'></div>
 
