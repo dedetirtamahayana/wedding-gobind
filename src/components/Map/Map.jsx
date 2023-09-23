@@ -2,6 +2,7 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 const Map = () => {
   useEffect(() => {
     AOS.init({
@@ -55,14 +56,24 @@ const Map = () => {
               Jl.Ir.Sutami, Kemenuh, Kecamatan Sukawati, Kabupaten Gianyar, Bali
             </p>
             <div className='text-center'>
-              <a
+              {/* <a
                 href='https://maps.app.goo.gl/MU7j3naQvcRRx6nw6?g_st=iw'
                 className='flex items-center justify-center text-black hover:text-gold'
               >
-                <FaMapMarkedAlt className='mr-2' />
+               
 
                 <span className=''>GET DIRECTION</span>
-              </a>
+              </a> */}
+              <Link
+                href='https://maps.app.goo.gl/MU7j3naQvcRRx6nw6?g_st=iw'
+                target='_blank'
+                className='flex items-center justify-center text-gold hover:text-black transition-colors duration-300'
+              >
+                <span className='flex items-center'>
+                  <FaMapMarkedAlt className='mr-2' />
+                  <span className=''>GET DIRECTION</span>
+                </span>
+              </Link>
             </div>
           </div>
           <div className='p-12  bg-white lg:w-auto lg:h-80 w-full'>
