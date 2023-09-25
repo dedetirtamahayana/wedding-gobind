@@ -71,13 +71,13 @@
   margin-bottom: 135px;
 }
 @font-face {
-  font-family: 'alex';
-  src: url('../../public/AlexBrush-Regular.ttf') format('truetype');
+  font-family: 'Cardo';
+  src: url('../../public/Cardo-Regular.ttf') format('truetype');
   /* Tambahkan format font lain jika diperlukan */
 }
 
 .custom-text {
-  font-family: 'alex', sans-serif;
+  font-family: 'Cardo', sans-serif;
 }
 
 @keyframes fireflyAnimation {

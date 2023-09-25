@@ -132,7 +132,7 @@ const Header = () => {
       <div style={{ height: "800px" }}>
         <div className='h-full w-full'>
           <img
-            src='../banner.png'
+            src='../banner-1.png'
             alt='image 1'
             className='h-full w-auto object-cover hidden lg:block md:block'
           />

@@ -6,7 +6,7 @@ const Backdrop = ({ onClick }) => {
       <div
         className='fixed top-0 left-0 w-full h-full'
         style={{
-          backgroundImage: `url('/3.jpg')`, // Ganti dengan path gambar yang benar
+          backgroundImage: `url('/banner-1.png')`, // Ganti dengan path gambar yang benar
           filter: "blur(5px)",
           backgroundPosition: "center center", // Menambahkan efek blur hanya pada latar belakang
         }}
