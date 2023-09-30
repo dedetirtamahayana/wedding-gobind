@@ -13,10 +13,10 @@ const Map = () => {
   return (
     <div id='map'>
       <div className='relative bg-map py-9 lg:py-48'>
-        <div className='absolute inset-0 bg-black opacity-50'></div>
+        {/* <div className='absolute inset-0 bg-black opacity-50'></div> */}
 
         <div className='container mx-auto relative'>
-          <div className='text-center lg:pb-36 text-white relative z-10'>
+          <div className='text-center lg:pb-36 text-black relative z-10'>
             <h2 className='text-5xl custom-text'>Celebrate Our Love</h2>
             <span className='text-3xl custom-text'> 20 OKT 2023</span>
           </div>
@@ -56,14 +56,6 @@ const Map = () => {
               Jl.Ir.Sutami, Kemenuh, Kecamatan Sukawati, Kabupaten Gianyar, Bali
             </p>
             <div className='text-center'>
-              {/* <a
-                href='https://maps.app.goo.gl/MU7j3naQvcRRx6nw6?g_st=iw'
-                className='flex items-center justify-center text-black hover:text-gold'
-              >
-               
-
-                <span className=''>GET DIRECTION</span>
-              </a> */}
               <Link
                 href='https://maps.app.goo.gl/MU7j3naQvcRRx6nw6?g_st=iw'
                 target='_blank'

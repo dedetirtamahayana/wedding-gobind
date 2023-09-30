@@ -11,7 +11,7 @@ const Backdrop = ({ onClick }) => {
           backgroundPosition: "center center", // Menambahkan efek blur hanya pada latar belakang
         }}
       ></div>
-      <div className='bg-black bg-opacity-50 absolute inset-0'></div>
+      <div className='bg-black bg-opacity-50 absolute inset-0 '></div>
       <div className=' text-white z-10 text-center mb-4'>
         <img src='/img-circle.png' alt='img-circle' className='w-60 mx-auto' />
         <h1 className='text-7xl custom-text mb-4'>Amara & Sarizki</h1>
